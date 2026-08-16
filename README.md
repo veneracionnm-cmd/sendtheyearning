@@ -22,8 +22,8 @@ In your Supabase project's API settings, copy:
 Put them in `config.js`:
 
 ```js
-window.SUPABASE_URL = "https://YOUR-PROJECT.supabase.co";
-window.SUPABASE_ANON_KEY = "YOUR_PUBLIC_KEY";
+window.SUPABASE_URL = "YOUR_SUPABASE_URL";
+window.SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
 ```
 
 Never put a `service_role` or secret key in a public website.
