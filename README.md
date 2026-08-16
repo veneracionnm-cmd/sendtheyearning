@@ -22,7 +22,7 @@ In your Supabase project's API settings, copy:
 Put them in `config.js`:
 
 ```js
-window.SUPABASE_URL = ["YOUR_SUPABASE_URL";](https://kyeekzgznuxwcfrpnujm.supabase.co)
+window.SUPABASE_URL = (https://kyeekzgznuxwcfrpnujm.supabase.co)
 window.SUPABASE_ANON_KEY = sb_publishable_5CRpFDAeh1qWKgcOEIXa9w_hvHkYanT
 ```
 
