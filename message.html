@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your anonymous message — Whisper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="card message-card">
+      <div class="logo">whisper<span>♡</span></div>
+      <p class="eyebrow">A message for</p>
+      <h1 id="recipientName">Loading…</h1>
+      <blockquote id="messageText"></blockquote>
+      <p id="date" class="date"></p>
+      <p id="error" class="status error"></p>
+      <a class="secondary-link" href="index.html">Send an anonymous message</a>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="message.js"></script>
+</body>
+</html>

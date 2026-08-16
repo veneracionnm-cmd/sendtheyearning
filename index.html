@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Whisper — Anonymous Messages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="card">
+      <div class="logo">whisper<span>♡</span></div>
+      <h1>Send an anonymous message.</h1>
+      <p class="sub">Write something you wish you could say. Your identity won't be displayed.</p>
+
+      <form id="messageForm">
+        <label for="recipient">Recipient's name</label>
+        <input id="recipient" name="recipient" maxlength="80" placeholder="e.g. Sarah" required>
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" maxlength="2000" rows="7"
+          placeholder="Write your anonymous message..." required></textarea>
+
+        <button type="submit" id="sendButton">Send anonymously</button>
+        <p id="status" class="status" aria-live="polite"></p>
+      </form>
+
+      <div id="success" class="success hidden">
+        <h2>Message sent 💌</h2>
+        <p>Give the recipient this private link. Anyone with the link can read the message.</p>
+        <div class="share-row">
+          <input id="privateLink" readonly>
+          <button id="copyButton" type="button" class="secondary">Copy</button>
+        </div>
+        <a id="openLink" class="open-link" href="#">Open message</a>
+        <button id="sendAnother" type="button" class="text-button">Send another</button>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
